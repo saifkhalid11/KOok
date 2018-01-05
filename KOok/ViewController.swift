@@ -12,20 +12,19 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var Label: UILabel!
-    var tap_count=0
+    
+    
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func Button(_ sender: Any) {
         /*
         Label.text="How are you"
         print("Button tapped")
  */
-        tap_count=tap_count+1
-        //print(tap_count)
-        if tap_count>=10{
-            Label.text = "You have tapped more than 10 times"
-    }
-    else{
-    print(tap_count)
-    }
+        print(text1.text!)
+        print(text2.text!)
     }
     
     @IBOutlet weak var Label2: UILabel!
