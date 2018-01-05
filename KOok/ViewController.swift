@@ -23,8 +23,15 @@ class ViewController: UIViewController {
         Label.text="How are you"
         print("Button tapped")
  */
-        print(text1.text!)
-        print(text2.text!)
+        //print(text1.text!)
+        //print(text2.text!)
+        // to change a string to an integer put ""quotaion marks"wwite your string in the quotation marksand put a \(and write the integers inside  like this)and close the quotes"
+        let addition = false
+        if addition{
+            Label.text="Answer :- \(Double(text1.text!)!+Double(text2.text!)!)"
+        } else {
+            Label.text="Answer :- \(Double(text1.text!)!-Double(text2.text!)!)"
+        }
     }
     
     @IBOutlet weak var Label2: UILabel!
